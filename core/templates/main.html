@@ -1,0 +1,32 @@
+{% load static  %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WW Energia</title>
+  <meta name="description" content="fotowoltaika ">
+  <meta name="author" content="https://github.com/WinterOdin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static '/css/indexGrid.css'  %}">
+  <link rel="stylesheet" href="{% static '/css/index.css'  %}">
+  
+  <link type="text/css" rel="stylesheet" href="{% static '/css/bootstrap.min.css'  %}" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static '/css/nav.css'  %}">
+</head>
+<body>
+  {%  include 'nav.html' %}
+    {% block content  %}
+
+
+
+    {% endblock  %}
+    
+    
+    <script src="{% static '/js/jquery.min.js'  %}"></script>
+    <script src="{% static '/js/bootstrap.min.js'  %}"></script>
+    <script src="{% static '/js/main.js'  %}"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="grid-container-picture">
+    <div class="textIndex">
+        <div class="textIndexContent">
+            Zbuduj swoją przyszłość z <span class="textIndexContentColor">energią odnawialną<span class="textIndexDot">.</span>
+            </span>
+        </div>
+        <div class="textAboutIndex">
+            Oszczędzaj na rachunkach za prąd i zyskaj dzięki panelom fotowoltaicznym. Skorzystaj z naszego kalkulatora by sprawdzić opłacalność inwestycji. 
+        </div>
+        <div class="buttonIndex">
+            <button class="draw meet">Oblicz</button>
+        </div>
+        
+    </div>
+    <div class="backgroundImgIndex">
+        <div class="mainPictureIndex">
+            <img class="responsiveImgIndex" src="{% static 'images/backgroundImg.png'  %}">
+        </div>
+    </div>
+    
+</div>
+<div class="checking">
+
+</div>
+
+{% endblock %}

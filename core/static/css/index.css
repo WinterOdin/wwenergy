@@ -1,0 +1,93 @@
+
+.responsiveImgIndex{
+    max-width: 80%;
+    margin-left: 10%;
+}
+.textIndexContent{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 64px;
+    width: 100%;
+    margin-left: 35%;
+    margin-top: 11%;
+    color:#9e8cc3 ;
+    z-index: 1000;
+}
+.textIndexContentColor{
+    color:#3a2b5a ;
+}
+.textIndexDot{
+    color:#9e8cc3 ;
+    margin-left: 0.3vw;
+}
+.textAboutIndex{
+    font-family: "Montserrat";
+    text-align: left;
+    font-size: 21px;
+    width: 90%;
+    font-weight: 500;
+    margin-left: 35%;
+    margin-top: 5%;
+    color:black ;
+    z-index: 1000;
+}
+.buttonIndex{
+    margin-left: 33%; 
+}
+.checking{
+    height: 100vh;
+}
+
+@media (max-width: 762px) {
+    
+.responsiveImgIndex{
+    font-size: 28px;
+    margin-left: 5%;
+    width: 90%;
+}
+.textIndexContent{
+    font-size: 26px;
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 0%;
+}
+.textIndexContentColor{
+    color:#3a2b5a ;
+}
+.textIndexDot{
+    color:#9e8cc3 ;
+    margin-left: 0.3vw;
+}
+.textAboutIndex{
+    font-size: 15px;
+    margin-left: 5%;
+    width: 90%;
+}
+.buttonIndex{
+    margin-left: 0%; 
+}
+  }
+
+
+
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 100px
+}
+
+::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, .09)
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .5);
+    -webkit-border-radius: 100px
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, .61);
+    -webkit-border-radius: 100px
+}

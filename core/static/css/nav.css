@@ -1,0 +1,233 @@
+button {
+    background: none;
+    border: 0;
+    box-sizing: border-box;
+    margin: 1em;
+    padding: 1.5vh 3vh;
+    box-shadow: inset 0 0 0 2px #1fa4aa ;
+    color: #1fa4aa;
+    font-size: inherit;
+    font-weight: 700;
+    position: relative;
+    vertical-align: middle;
+    font-size: 20px;
+  }
+  button::before, button::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .draw {
+    -webkit-transition: color 0.25s;
+    transition: color 0.25s;
+  }
+  .draw::before, .draw::after {
+    border: 2px solid transparent;
+    width: 0;
+    height: 0;
+  }
+  .draw::before {
+    top: 0;
+    left: 0;
+  }
+  .draw::after {
+    bottom: 0;
+    right: 0;
+  }
+  .draw:hover {
+    color: #60daaa;
+  }
+  .draw:hover::before, .draw:hover::after {
+    width: 100%;
+    height: 100%;
+  }
+  .draw:hover::before {
+    border-top-color: #60daaa;
+    border-right-color: #60daaa;
+    -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  }
+  .draw:hover::after {
+    border-bottom-color: #60daaa;
+    border-left-color: #60daaa;
+    -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+  }
+  
+  .meet:hover {
+    color: #317b7e ;
+  }
+  .meet::after {
+    top: 0;
+    left: 0;
+  }
+  .meet:hover::before {
+    border-top-color:#317b7e ;
+    border-right-color: #317b7e ;;
+  }
+  .meet:hover::after {
+    border-bottom-color: #317b7e ;
+    border-left-color: #317b7e ;
+    -webkit-transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+    transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+  }
+
+  @media (max-width: 762px) {
+    button {
+       
+        font-size: 16px;
+      }
+  }
+
+
+
+
+
+
+
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 12%;
+    background-color: white;
+  }
+  
+  nav{
+    margin-right: 20%;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  .logoImg{
+    max-width: 25%;
+}
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color:#9e8cc3 ;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    width: 30vw;
+   
+    
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: color 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color:#5b4291 ;
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    background-color:#17898e;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    color: white;
+  }
+  
+  .cta:hover {
+    background-color: #19686b;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Mobile Nav */
+  
+  .menu {
+    display: none;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  
+  .overlay--active {
+    width: 100%;
+  }
+  
+  .overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+  }
+  
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #0088a9;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .close {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+   
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .nav__links,
+    .cta {
+      display: none;
+    }
+    .menu {
+        display: initial;
+        padding: 5px 16px;
+        background-color:#17898e;
+        font-size: 18px;
+    }
+    .logoImg {
+        max-width: 75%;
+    }
+  }
+  
