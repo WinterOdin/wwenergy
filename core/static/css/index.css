@@ -38,7 +38,7 @@
     height: 100vh;
 }
 
-@media (max-width: 762px) {
+@media (max-width: 800px) {
     
 .responsiveImgIndex{
     font-size: 28px;

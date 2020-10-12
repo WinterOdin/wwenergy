@@ -11,6 +11,7 @@ button {
     position: relative;
     vertical-align: middle;
     font-size: 20px;
+    border-radius: 25px;
   }
   button::before, button::after {
     box-sizing: inherit;
@@ -20,60 +21,7 @@ button {
     height: 100%;
   }
   
-  .draw {
-    -webkit-transition: color 0.25s;
-    transition: color 0.25s;
-  }
-  .draw::before, .draw::after {
-    border: 2px solid transparent;
-    width: 0;
-    height: 0;
-  }
-  .draw::before {
-    top: 0;
-    left: 0;
-  }
-  .draw::after {
-    bottom: 0;
-    right: 0;
-  }
-  .draw:hover {
-    color: #60daaa;
-  }
-  .draw:hover::before, .draw:hover::after {
-    width: 100%;
-    height: 100%;
-  }
-  .draw:hover::before {
-    border-top-color: #60daaa;
-    border-right-color: #60daaa;
-    -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-  }
-  .draw:hover::after {
-    border-bottom-color: #60daaa;
-    border-left-color: #60daaa;
-    -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-  }
-  
-  .meet:hover {
-    color: #317b7e ;
-  }
-  .meet::after {
-    top: 0;
-    left: 0;
-  }
-  .meet:hover::before {
-    border-top-color:#317b7e ;
-    border-right-color: #317b7e ;;
-  }
-  .meet:hover::after {
-    border-bottom-color: #317b7e ;
-    border-left-color: #317b7e ;
-    -webkit-transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
-    transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
-  }
+ 
 
   @media (max-width: 762px) {
     button {
@@ -98,7 +46,7 @@ button {
   }
   
   nav{
-    margin-right: 20%;
+
   }
   
   .logo {
@@ -121,7 +69,7 @@ button {
   .nav__links {
     list-style: none;
     display: flex;
-    width: 30vw;
+
    
     
   }

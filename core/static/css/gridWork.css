@@ -1,0 +1,28 @@
+.grid-container-work {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "colTextHow colColsHow"
+      "colTextHow colColsHow"
+      "colTextHow colColsHow";
+  }
+  .colTextHow { grid-area: colTextHow; }
+  .colColsHow {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "col1 col1 . ."
+      "col1 col1 col2 col2"
+      "col3 col3 col2 col2"
+      "col3 col3 col4 col4"
+      ". . col4 col4";
+    grid-area: colColsHow;
+  }
+  .col1 { grid-area: col1; width:100%; height: 35vh;}
+  .col2 { grid-area: col2; width:100%; height: 35vh; }
+  .col3 { grid-area: col3;}
+  .col4 { grid-area: col4;} 

@@ -15,11 +15,11 @@
 
 
 
-  @media (max-width: 762px) {
+  @media (max-width: 800px) {
     .grid-container-picture {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 0.5fr 1fr;
       gap: 1px 1px;
       grid-template-areas:
         "textIndex"

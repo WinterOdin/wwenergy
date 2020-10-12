@@ -1,0 +1,40 @@
+.colBox1{
+
+    width: 40%;
+    margin-left: 57%;
+    height:30vh;
+    margin-top: 5vh;
+    -webkit-box-shadow: -5px 6px 115px -82px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 6px 115px -82px rgba(0,0,0,0.75);
+    box-shadow: -5px 6px 115px -82px rgba(0,0,0,0.75);
+}
+.colBox2{
+    background-color: crimson;
+    width: 40%;
+    margin-left:3%;
+    height:30vh;
+    margin-top: 5vh;
+    -webkit-box-shadow: -5px 6px 115px -82px rgba(0,0,0,0.75);
+    -moz-box-shadow: -5px 6px 115px -82px rgba(0,0,0,0.75);
+    box-shadow: -5px 6px 115px -82px rgba(0,0,0,0.75);
+}
+.iconBox1{
+    font-size: 14vh;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #b1a0d3 ;
+    position:relative;
+    bottom:30%;
+}
+.iconBox2-1{
+    font-size: 14vh;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #b1a0d3 ;
+    position:relative;
+    bottom:35%;
+    z-index: 100000000;
+    transform: scaleX(-1);
+}
