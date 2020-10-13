@@ -1,40 +1,202 @@
-.colBox1{
-
-    width: 40%;
-    margin-left: 57%;
-    height:30vh;
-    margin-top: 5vh;
-    -webkit-box-shadow: -5px 6px 115px -82px rgba(0,0,0,0.75);
-    -moz-box-shadow: -5px 6px 115px -82px rgba(0,0,0,0.75);
-    box-shadow: -5px 6px 115px -82px rgba(0,0,0,0.75);
+body{
+    padding: 0;
+    margin: 0;
 }
-.colBox2{
-    background-color: crimson;
-    width: 40%;
-    margin-left:3%;
-    height:30vh;
-    margin-top: 5vh;
-    -webkit-box-shadow: -5px 6px 115px -82px rgba(0,0,0,0.75);
-    -moz-box-shadow: -5px 6px 115px -82px rgba(0,0,0,0.75);
-    box-shadow: -5px 6px 115px -82px rgba(0,0,0,0.75);
+.colBox1,.colBox3,.colBox2,.colBox4{
+
+    height: 35vh;
+    width: 100%;
+   
+    border-radius: 15px;
+}
+.colBox1,.colBox2,.colBox3,.colBox4{
+    -webkit-box-shadow: 0px 0px 91px -72px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 91px -72px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 91px -72px rgba(0,0,0,0.75);
+}
+.iconBox1,.iconBox3,.iconBox2,.iconBox4{
+    font-size: 140px;
+    position: relative;
+    bottom: 30%;
+    text-align: center;
 }
 .iconBox1{
-    font-size: 14vh;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    color: #b1a0d3 ;
-    position:relative;
-    bottom:30%;
+    color:rgb(140, 118, 184);
+    text-shadow: 0px 24px 25px rgba(188, 134, 236, 0.541);
 }
-.iconBox2-1{
-    font-size: 14vh;
+.iconBox2{
+    color:#1fa4aa;
+    text-shadow: 0px 18px 25px rgba(103, 255, 217, 0.41);
+}
+.iconBox3{
+    color:#5d9eff;
+    text-shadow: 0px 18px 25px rgba(58, 104, 255, 0.41);
+}
+.iconBox4{
+    color:#ff6d53;
+    text-shadow: 0px 18px 25px rgba(255, 149, 88, 0.41);
+}
+.boxText{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 28%;
+    font-size: 18px;
     text-align: center;
-    padding: 0;
-    margin: 0;
-    color: #b1a0d3 ;
-    position:relative;
-    bottom:35%;
-    z-index: 100000000;
-    transform: scaleX(-1);
+    color:rgb(140, 118, 184);
+}
+.colorBox1{
+    color:rgb(140, 118, 184);
+}
+.colorBox2{
+    color:#1fa4aa;
+}
+.colorBox3{
+    color:#5d9eff;
+}
+.colorBox4{
+    color:#ff6d53;
+}
+.colTextHow{
+
+}
+.textHowContainer{
+    width: 50%;
+    height: 50%;  
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+  
+}
+.titleTextHow{
+    font-family: "Montserrat", sans-serif;
+    height: auto;
+    font-weight: 700;
+    font-size: 50px;
+}
+.fillerContentHow{
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    width: 95%;
+    position: relative;
+    bottom: 10%;
+}
+.textBox{
+    font-family: "Montserrat", sans-serif;
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+    bottom: 25%;
+    text-align: center;
+}
+.numbersBox{
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    bottom: 15%;
+}
+@media (max-width: 1800px) {
+    .iconBox1,.iconBox3,.iconBox2,.iconBox4{
+        font-size: 125px;
+    }
+    .textHowContainer{
+        width: 70%;
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (max-width: 1600px) {
+    .iconBox1,.iconBox3,.iconBox2,.iconBox4{
+        font-size: 115px;
+    }
+    .boxText{
+        font-size: 16px;
+    }
+    
+}
+@media (max-width: 1430px) {
+    .textHowContainer{
+        width: 80%;
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .colBox1,.colBox3,.colBox2,.colBox4{
+        height: 40vh;
+    }   
+}
+
+@media (max-width: 550px) {
+
+    .textHowContainer{
+        width: 90%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .titleTextHow{
+
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .fillerContentHow{
+        font-size: 17px;
+        width: 95%;
+        position: relative;
+        top: 35%;
+    }
+    .iconBox1,.iconBox3,.iconBox2,.iconBox4{
+        font-size: 100px;
+        position: relative;
+        bottom: 30%;
+    }
+    .textBox{
+        font-family: "Montserrat", sans-serif;
+        width: 90%;
+        margin-left: 5%;
+        position: relative;
+        bottom: 25%;
+        font-size: 15px;
+    }
+
+  
+}
+@media (max-width: 440px) {
+
+    .textHowContainer{
+        width: 90%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .titleTextHow{
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .fillerContentHow{
+        font-size: 15px;
+        width: 95%;
+        position: relative;
+        top: 15%;
+    }
+    .iconBox1,.iconBox3,.iconBox2,.iconBox4{
+        font-size: 80px;
+        position: relative;
+        bottom: 30%;
+    }
+    .boxText{
+        font-size: 14px;
+    }
+    .textBox{
+        font-size: 13px;
+        margin-top: 7%;
+    }
 }

@@ -34,9 +34,20 @@
 .buttonIndex{
     margin-left: 33%; 
 }
-.checking{
-    height: 100vh;
+
+@media (max-width: 1600px) {
+    .textIndexContent{
+        font-size: 47px;
+    }
 }
+
+
+@media (max-width: 1430px) {
+    .textIndexContent{
+        font-size: 44px;
+    }
+
+
 
 @media (max-width: 800px) {
     

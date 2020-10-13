@@ -1,28 +1,145 @@
 .grid-container-work {
+  display: grid;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  grid-template-columns: 1.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "colTextHow colColsHow ."
+    "colTextHow colColsHow ."
+    "colTextHow colColsHow .";
+}
+.colTextHow { grid-area: colTextHow; }
+.colColsHow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 3vw;
+  grid-template-areas:
+    "col1 col2"
+    "col1 col2"
+    "col3 col4"
+    "col3 col4";
+  grid-area: colColsHow;
+}
+.col1 { grid-area: col1; height: 40vh;   }
+.col2 { grid-area: col2; height: 45vh;  }
+.col3 { grid-area: col3; height: 40vh;}
+.col4 { grid-area: col4; height: 40vh; }
+
+@media (max-width: 1430px) {
+  .textHowContainer{
+      width: 80%;
+      margin-top: 15%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .col1 { grid-area: col1; height: 50vh;   }
+  .col2 { grid-area: col2; height: 55vh;  }
+  .col3 { grid-area: col3; height: 50vh;}
+  .col4 { grid-area: col4; height: 50vh; }
+  .colBox1,.colBox3,.colBox2,.colBox4{
+      height: 100%;
+  }   
+}
+
+@media (max-width:1280px){
+  .grid-container-work {
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "colTextHow colColsHow"
-      "colTextHow colColsHow"
-      "colTextHow colColsHow";
+      "colTextHow colTextHow"
+      "colTextHow colTextHow"
+      "colColsHow colColsHow"
+      "colColsHow colColsHow"
+      "colColsHow colColsHow";
   }
   .colTextHow { grid-area: colTextHow; }
   .colColsHow {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "col1 col1 . ."
-      "col1 col1 col2 col2"
-      "col3 col3 col2 col2"
-      "col3 col3 col4 col4"
-      ". . col4 col4";
+      "col1 col2"
+      "col1 col2"
+      "col3 col4"
+      "col3 col4";
     grid-area: colColsHow;
   }
-  .col1 { grid-area: col1; width:100%; height: 35vh;}
-  .col2 { grid-area: col2; width:100%; height: 35vh; }
-  .col3 { grid-area: col3;}
-  .col4 { grid-area: col4;} 
+  .col1 { grid-area: col1; }
+  .col2 { grid-area: col2; }
+  .col3 { grid-area: col3; }
+  .col4 { grid-area: col4; }
+}
+
+@media (max-width:540px){
+  .grid-container-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "colTextHow colTextHow"
+      "colTextHow colTextHow"
+      "colColsHow colColsHow"
+      "colColsHow colColsHow"
+      "colColsHow colColsHow";
+  }
+  .colTextHow { grid-area: colTextHow; }
+  .colColsHow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "col1 col2"
+      "col1 col2"
+      "col3 col4"
+      "col3 col4";
+    grid-area: colColsHow;
+  }
+  .col1 { grid-area: col1; height: 60vh;}
+  .col2 { grid-area: col2; height: 60vh;}
+  .col3 { grid-area: col3; height: 60vh;}
+  .col4 { grid-area: col4; height: 60vh;}
+  .colBox1,.colBox3,.colBox2,.colBox4{
+    height: 100%;
+}   
+}
+@media (max-width: 440px) {
+  .grid-container-work {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 0.5fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "colTextHow colTextHow"
+      "colTextHow colTextHow"
+      "colColsHow colColsHow"
+      "colColsHow colColsHow"
+      "colColsHow colColsHow";
+  }
+  .colColsHow{
+    margin-top: 10%;
+  }
+  .col1 { grid-area: col1; height: 50vh;}
+  .col2 { grid-area: col2; height: 50vh;}
+  .col3 { grid-area: col3; height: 50vh;}
+  .col4 { grid-area: col4; height: 50vh;}
+}
+
+@media (max-width: 330px) {
+  .colColsHow{
+    margin-top: 30%;
+  }
+  .col1 { grid-area: col1; height: 65vh;}
+  .col2 { grid-area: col2; height: 65vh;}
+  .col3 { grid-area: col3; height: 65vh;}
+  .col4 { grid-area: col4; height: 65vh;}
+}

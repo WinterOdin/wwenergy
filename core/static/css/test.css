@@ -1,0 +1,14 @@
+.test{
+    opacity: 0.8;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 15%;
+
+}
+.sliderTitle{
+    text-align: center;
+    font-size: 45px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    padding-bottom: 30px;
+}

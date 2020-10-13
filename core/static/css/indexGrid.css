@@ -19,10 +19,28 @@
     .grid-container-picture {
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 0.5fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
       gap: 1px 1px;
       grid-template-areas:
         "textIndex"
+        "textIndex"
+        "backgroundImgIndex"
+        "backgroundImgIndex";
+    }
+    
+    .textIndex { grid-area: textIndex; }
+    
+    .backgroundImgIndex { grid-area: backgroundImgIndex; }
+  }
+  
+  
+  @media (max-width: 380px) {
+    .grid-container-picture {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 0.5fr;
+      gap: 1px 1px;
+      grid-template-areas:
         "textIndex"
         "textIndex"
         "backgroundImgIndex"
