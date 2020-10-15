@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "backgroundPic backgroundPic backgroundPic backgroundPic backgroundPic"
+      "backgroundPic backgroundPic backgroundPic backgroundPic backgroundPic"
+      "backgroundPic backgroundPic backgroundPic backgroundPic backgroundPic";
+    
+  }
+  .backgroundPic {
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0% 100%;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 1fr 0.6fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "leftCol mainCol mainCol rightCol"
+      "leftCol mainCol mainCol rightCol"
+      "leftCol mainCol mainCol rightCol";
+    grid-area: backgroundPic;
+  }
+  .leftCol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "whiteLeftCol whiteLeftCol whiteLeftCol"
+      "blueColLeft blueColLeft blueColLeft"
+      "blueColLeft blueColLeft blueColLeft"
+      "blueColLeft blueColLeft blueColLeft";
+    grid-area: leftCol;
+  }
+  .whiteLeftCol { 
+    grid-area: whiteLeftCol;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat';
+    text-align: center;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+
+   }
+  .blueColLeft {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      ". . ."
+      ". . ."
+      "textColLeft textColLeft textColLeft";
+    grid-area: blueColLeft;
+    background-color:#0A09D5;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+  }
+  .textColLeft { grid-area: textColLeft; }
+  .mainCol { grid-area: mainCol; }
+  .rightCol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "blueColRight blueColRight blueColRight"
+      "blueColRight blueColRight blueColRight"
+      "blueColRight blueColRight blueColRight"
+      "whiteColRight whiteColRight whiteColRight";
+    grid-area: rightCol;
+  }
+  .whiteColRight { 
+    grid-area: whiteColRight;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+   }
+  .blueColRight {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "textColRight textColRight textColRight"
+      ". . .";
+    grid-area: blueColRight;
+    background-color: rgb(5, 30, 255);
+    width: 100%;
+    height: 100%;
+  }
+  .textColRight { grid-area: textColRight; }
