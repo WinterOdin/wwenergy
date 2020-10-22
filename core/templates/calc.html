@@ -1,0 +1,76 @@
+<div class="grid-container-calc">
+    <div class="titleCalc">
+        <div class="containerTitleCalc">
+                
+            Oblicz swoją <span class="textIndexContentColor">inwestycje <span class="textIndexDot">.</span>
+
+        </div>
+    </div>
+    <div class="calcOption">
+        <div class="calcInfo">
+            By obliczyć potrzebne metry kwadratowe, ilość paneli oraz zapotzebowanie energetyczne wybierz
+        </div>
+        <form>
+        {% csrf_token  %}
+            <div class="calcSelect">
+                <select name="make" class="selectControl" >
+                    <option value="">wybierz roczną średnią</option>
+                    {% for x in make  %}
+                    <option value="{{  x.make  }}">{{ x.make  }}</option>
+                    {% endfor  %}
+                </select>
+            </div>
+            <div class="containerAddOns">
+                <div class="maxWidthOfQuestionRow">
+                    <div class="positionOfQuestionRows">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12 clickFaq">
+                                <div class="faqQuestion">
+                                    Chce by doradca <span class="colorEnergy">WW energy</span> skontaktował się ze mnął 
+                                </div>
+                                <div class="faqQuestionsTextPreview open">
+                                    <div class="formContainer">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6 ">
+                                                    <div class="form__group field">
+                                                        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                                                        <label for="name" class="form__label">Imie</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 ">
+                                                    <div class="form__group field">
+                                                        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                                                        <label for="name" class="form__label">Nazwisko</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6 ">
+                                                    <div class="form__group field">
+                                                        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                                                        <label for="name" class="form__label">Numer</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 ">
+                                                    <div class="form__group field">
+                                                        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                                                        <label for="name" class="form__label">Email</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerSubmit ">
+                <button class="draw meet buttonCalc">Oblicz</button>
+            </div>
+        </form>
+    </div>
+    <div class="calcAddedCol"></div>
+</div>

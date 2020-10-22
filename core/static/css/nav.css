@@ -51,9 +51,10 @@ button {
   
   .logo {
     cursor: pointer;
+    max-width: 20%;
   }
   .logoImg{
-    max-width: 25%;
+    max-width: 45%;
 }
   
   .nav__links a,
@@ -68,10 +69,7 @@ button {
   
   .nav__links {
     list-style: none;
-    display: flex;
-
-   
-    
+    display: flex;  
   }
   
   .nav__links li {
@@ -151,7 +149,7 @@ button {
     color: #edf0f1;
   }
   
-  @media screen and (max-height: 450px) {
+  @media (max-height: 450px) {
     .overlay a {
       font-size: 20px;
     }
@@ -160,10 +158,13 @@ button {
       top: 15px;
       right: 35px;
     }
+    .logoImg{
+      max-width: 155%;
+  }
    
   }
   
-  @media only screen and (max-width: 800px) {
+  @media  (max-width: 800px) {
     .nav__links,
     .cta {
       display: none;
@@ -175,7 +176,7 @@ button {
         font-size: 18px;
     }
     .logoImg {
-        max-width: 75%;
+      max-width: 155%;
     }
   }
   
