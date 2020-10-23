@@ -1,0 +1,57 @@
+.titleGalleryWrapper{
+
+    margin-top: 5%;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+.galleryPos{
+    margin-bottom: 5%;
+}
+.colorGallerytitle{
+    color: #1fa4aa;
+}
+.tileGallery{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    position: relative;
+}
+.boxWhere{
+    width: 70%;
+    height: 10vh;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.titleWhere{
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 14%;
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: 700;
+    color: #55447a;
+    word-wrap: break-word;
+}
+.tileGallery:hover > .boxWhere{
+    background-color: #3a2b5a;
+}
+.tileGallery:hover > .boxWhere > .titleWhere{
+    color: white;
+}
+@media (min-width:1030px){
+
+    .titleWhere{
+        padding-top: 9%;
+    }
+}
+@media (min-width:769px){
+    .titleWhere{
+        padding-top: 11%;
+        font-size: 15px;
+    }
+}
