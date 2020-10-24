@@ -15,22 +15,27 @@
 }
 .tileGallery{
     width: 100%;
-    height: 30vh;
-    background-color: black;
+    height: 35vh;
+    filter: grayscale(30%);
     position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
+
 .boxWhere{
-    width: 70%;
-    height: 10vh;
+    width: 75%;
+    height: 8vh;
     background-color: white;
     position: absolute;
     bottom: 0;
     right: 0;
 }
 .titleWhere{
-    width: 80%;
-    margin-left: 10%;
-    padding-top: 14%;
+
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 7%;
     font-family: "Montserrat";
     font-size: 17px;
     font-weight: 700;
@@ -42,16 +47,4 @@
 }
 .tileGallery:hover > .boxWhere > .titleWhere{
     color: white;
-}
-@media (min-width:1030px){
-
-    .titleWhere{
-        padding-top: 9%;
-    }
-}
-@media (min-width:769px){
-    .titleWhere{
-        padding-top: 11%;
-        font-size: 15px;
-    }
 }

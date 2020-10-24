@@ -14,61 +14,23 @@
     </div>
 
 
-    <div class="row no-gutters">
-        <div class="col-md-4">
-            <div class="tileGallery">
-                <div class="boxWhere">
-                    <div class="titleWhere">
-                        Kędzierzyn koźle xDD
+    <div class="row no-gutters ">
+        {% for x in latest_pics  %}
+            <div class="col-sm-12 col-md-12 col-lg-4 align-self-center">
+                <div class="tileGallery" style="background-image: url('{{ x.picPlace.url  }}');">
+                    <div class="boxWhere">
+                        <div class="titleWhere">
+                            {{ x.place  }} {{ x.kwPlace  }}kW
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-              <div class="tileGallery">
-                <div class="boxWhere">
-                    <div class="titleWhere">
-                        Kędzierzyn koźle xDD
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="tileGallery">
-                <div class="boxWhere">
-                    <div class="titleWhere">
-                        Kędzierzyn koźle xDD
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="tileGallery">
-                <div class="boxWhere">
-                    <div class="titleWhere">
-                        Kędzierzyn koźle xDD
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="tileGallery">
-                <div class="boxWhere">
-                    <div class="titleWhere">
-                        Kędzierzyn koźle xDD
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="tileGallery">
-                <div class="boxWhere">
-                    <div class="titleWhere">
-                        Kędzierzyn koźle xDD
-                    </div>
-                </div>
-            </div>
-        </div>
+        {% endfor  %}
+        
+ 
+   
+
+
     </div>
 
 </div>
