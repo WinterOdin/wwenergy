@@ -5,3 +5,6 @@ from django.contrib import admin
 from .models import *
 
 admin.site.register(galleryModel)
+admin.site.register(electricityPrice)
+admin.site.register(electricData)
+admin.site.register(client)

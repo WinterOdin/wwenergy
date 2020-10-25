@@ -10,13 +10,13 @@
         <div class="calcInfo">
             By obliczyć potrzebne metry kwadratowe, ilość paneli oraz zapotzebowanie energetyczne wybierz
         </div>
-        <form>
-        {% csrf_token  %}
+        <form method="POST" action="">
+            {% csrf_token  %}
             <div class="calcSelect">
-                <select name="make" class="selectControl" >
+                <select name="powerPrice" id="powerPrice" class="selectControl" >
                     <option value="">wybierz roczną średnią</option>
-                    {% for x in make  %}
-                    <option value="{{  x.make  }}">{{ x.make  }}</option>
+                    {% for x in selectPrice  %}
+                    <option value="{{  x.selectPrice  }}">{{ x.price  }}</option>
                     {% endfor  %}
                 </select>
             </div>
@@ -34,28 +34,28 @@
                                             <div class="row">
                                                 <div class="col-sm-12 col-md-6 ">
                                                     <div class="form__group field">
-                                                        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+                                                        {{ form.name  }}
                                                         <label for="name" class="form__label">Imie</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6 ">
                                                     <div class="form__group field">
-                                                        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
-                                                        <label for="name" class="form__label">Nazwisko</label>
+                                                        {{ form.surname  }}
+                                                        <label for="surname" class="form__label">Nazwisko</label>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col-sm-12 col-md-6 ">
                                                     <div class="form__group field">
-                                                        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
-                                                        <label for="name" class="form__label">Numer</label>
+                                                        {{ form.phone  }}
+                                                        <label for="phone" class="form__label">Numer</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6 ">
                                                     <div class="form__group field">
-                                                        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
-                                                        <label for="name" class="form__label">Email</label>
+                                                        {{ form.email  }}
+                                                        <label for="email" class="form__label">Email</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="containerSubmit ">
-                <button class="draw meet buttonCalc">Oblicz</button>
+                <button type="submit" class="draw meet buttonCalc">Oblicz</button>
             </div>
         </form>
     </div>

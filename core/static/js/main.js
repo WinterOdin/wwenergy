@@ -21,9 +21,7 @@ $('.faqQuestion ').click(function(){
   $(this).next().slideToggle();
 });
 
-$('.clickFaq').click(function(){
-  $('.number').addClass('.numberColor');
-});
+
 
 
 
