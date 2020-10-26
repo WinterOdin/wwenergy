@@ -10,13 +10,13 @@
         <div class="calcInfo">
             By obliczyć potrzebne metry kwadratowe, ilość paneli oraz zapotzebowanie energetyczne wybierz
         </div>
-        <form method="POST" action="">
+        <form method="POST" action="{% url 'data'  %}">
             {% csrf_token  %}
             <div class="calcSelect">
-                <select name="powerPrice" id="powerPrice" class="selectControl" >
+                <select name="powerPrice" id="powerPrice" class="selectControl" required >
                     <option value="">wybierz roczną średnią</option>
                     {% for x in selectPrice  %}
-                    <option value="{{  x.selectPrice  }}">{{ x.price  }}</option>
+                    <option value="{{  x.id  }}">{{ x.price  }}</option>
                     {% endfor  %}
                 </select>
             </div>
@@ -32,13 +32,13 @@
                                     <div class="formContainer">
                                         <div class="container-fluid">
                                             <div class="row">
-                                                <div class="col-sm-12 col-md-6 ">
+                                                <div class="col-sm-12 col-md-12 col-lg-6">
                                                     <div class="form__group field">
                                                         {{ form.name  }}
                                                         <label for="name" class="form__label">Imie</label>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-12 col-md-6 ">
+                                                <div class="col-sm-12 col-md-12 col-lg-6">
                                                     <div class="form__group field">
                                                         {{ form.surname  }}
                                                         <label for="surname" class="form__label">Nazwisko</label>
@@ -46,13 +46,13 @@
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col-sm-12 col-md-6 ">
+                                                <div class="col-sm-12 col-md-12 col-lg-6">
                                                     <div class="form__group field">
                                                         {{ form.phone  }}
                                                         <label for="phone" class="form__label">Numer</label>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-12 col-md-6 ">
+                                                <div class="col-sm-12 col-md-12 col-lg-6">
                                                     <div class="form__group field">
                                                         {{ form.email  }}
                                                         <label for="email" class="form__label">Email</label>

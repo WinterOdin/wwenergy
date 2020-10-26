@@ -8,10 +8,10 @@ class clientForm(forms.ModelForm):
         fields  = ['name','surname','phone','email',]
         widgets = {
 
-            'name':forms.TextInput(attrs={'class':'form__field','id':'name','name':'name','placeholder':'name'}),
-            'surname':forms.TextInput(attrs={'class':'form__field','id':'surname','surname':'surname','placeholder':'surname'}),
-            'phone':forms.TextInput(attrs={'class':'form__field','id':'surname','phone':'phone','placeholder':'phone'}),
-            'email':forms.TextInput(attrs={'class':'form__field','id':'surname','email':'email','placeholder':'email'}),
+            'name':forms.TextInput(attrs={'class':'form__field','id':'name','name':'name','placeholder':'name','maxlength':'"20"'}),
+            'surname':forms.TextInput(attrs={'class':'form__field','id':'surname','surname':'surname','placeholder':'surname','maxlength':'"30"'}),
+            'phone':forms.TextInput(attrs={'class':'form__field','id':'surname','phone':'phone','placeholder':'phone','maxlength':'"10"'}),
+            'email':forms.TextInput(attrs={'class':'form__field','id':'surname','email':'email','placeholder':'email','maxlength':'"40"'}),
 
 
         }
