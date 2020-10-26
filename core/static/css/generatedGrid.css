@@ -1,0 +1,105 @@
+.grid-container-generated {
+    display: grid;
+    padding-bottom: 10vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "pictureGeneratedContainer textGeneratedContainer"
+      "pictureGeneratedContainer textGeneratedContainer"
+      "pictureGeneratedContainer textGeneratedContainer"
+      "pictureGeneratedContainer textGeneratedContainer";
+  }
+  
+  .pictureGeneratedContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1.5fr 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      "pictureGenerated pictureGenerated pictureGenerated"
+      ". . .";
+    grid-area: pictureGeneratedContainer;
+  }
+  
+  .pictureGenerated { grid-area: pictureGenerated; }
+  
+  .textGeneratedContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1.5fr 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". . ."
+      "textGenerated textGenerated textGenerated"
+      ". . .";
+    grid-area: textGeneratedContainer;
+  }
+  
+  .textGenerated { grid-area: textGenerated; }
+  
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "textGeneratedContainer"
+      "pictureGeneratedContainer";
+  }
+  
+  .pictureGeneratedContainer { grid-area: pictureGeneratedContainer; }
+  .textGeneratedContainer { grid-area: textGeneratedContainer; }
+
+  
+
+
+  @media (max-width:1020px){
+    .grid-container-generated {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.5fr 0.5fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        "textGeneratedContainer"
+        "pictureGeneratedContainer";
+    }
+    
+    .pictureGeneratedContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        "pictureGenerated pictureGenerated pictureGenerated"
+        "pictureGenerated pictureGenerated pictureGenerated";
+      grid-area: pictureGeneratedContainer;
+    }
+    
+    .pictureGenerated { grid-area: pictureGenerated; }
+    
+    .textGeneratedContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        "textGenerated textGenerated textGenerated"
+        "textGenerated textGenerated textGenerated";
+      grid-area: textGeneratedContainer;
+    }
+    
+    .textGenerated { grid-area: textGenerated; }
+  }
+
+  @media (max-width:380px){
+    .grid-container-generated {
+      padding-bottom: 3vh;
+    }
+
+  }
+
+
+ 

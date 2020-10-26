@@ -130,7 +130,38 @@
   .form__field:required, .form__field:invalid {
     box-shadow: none;
   }
- 
+
+.agreement{
+  margin-top: 3vh;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 15px;
+  word-spacing: 3px;
+  color: rgb(140, 118, 184);
+  text-align: center;
+}
+
+
+  @media (max-width: 820px) {
+    .containerTitleCalc{
+      width: 90%;
+      margin-left: 5%;
+  }
+  .calcInfo {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .calcSelect {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .containerAddOns {
+    width: 90%;
+    margin-left: 5%;
+}
+}
+
+
 @media (max-width: 500px) {
 .containerTitleCalc{
     width: 98%;
@@ -171,5 +202,8 @@
 
 }
 
+.agreement{
+  font-size: 12px;
+}
 }
   

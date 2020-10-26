@@ -29,10 +29,11 @@ class electricData(models.Model):
         return self.paneleM2 + " metrów kwadratowych"
 
 class client(models.Model):
-    name     = models.CharField(max_length=15,null=True, blank=True)
-    surname  = models.CharField(max_length=20,null=True, blank=True)
-    phone    = models.CharField(max_length=9,null=True, blank=True)
-    email    = models.CharField(max_length=33,null=True, blank=True)
+    name       = models.CharField(max_length=15,null=True, blank=True, )
+    surname    = models.CharField(max_length=20,null=True, blank=True, )
+    phone      = models.CharField(max_length=9,null=True, blank=True)
+    email      = models.CharField(max_length=33,null=True, blank=True)
+
     
     def __str__(self):
-        return self.name + " " + self.surname 
+        return str(self.name )+ " " + str(self.surname) 

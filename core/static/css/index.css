@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+  }
 .responsiveImgIndex{
     max-width: 80%;
     margin-left: 10%;
@@ -43,12 +45,15 @@
 
 
 @media (max-width: 1430px) {
+
+    
+}
+@media (max-width: 1030px) {
+
     .textIndexContent{
-        font-size: 44px;
+        width: 110%;
     }
-
-
-
+}
 @media (max-width: 800px) {
     
 .responsiveImgIndex{

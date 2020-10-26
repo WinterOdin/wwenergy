@@ -44,6 +44,9 @@
 }
 .tileGallery:hover > .boxWhere{
     background-color: #3a2b5a;
+    -webkit-transition: background-color 140ms linear;
+    -ms-transition: background-color 140ms linear;
+    transition: background-color 140ms linear;
 }
 .tileGallery:hover > .boxWhere > .titleWhere{
     color: white;

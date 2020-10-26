@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
+{%  include 'nav.html' %}
 
 
 <div class="grid-container-picture">
@@ -14,7 +14,9 @@
             Oszczędzaj na rachunkach za prąd i zyskaj dzięki panelom fotowoltaicznym. Skorzystaj z naszego kalkulatora by sprawdzić opłacalność inwestycji. 
         </div>
         <div class="buttonIndex">
-            <button >Oblicz</button>
+            <a href="#calc">
+                 <button >Oblicz</button>  
+            </a>
         </div>
         
     </div>

@@ -1,6 +1,69 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-{{ data.kwp }}
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <div class="imgGeneratedWrapper">
+                <a class="logo" href="/"><img src="{% static '/images/Black-on-Transparent.png'  %}" class="logoImg logoImgGenerated" alt="logo"></a>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            
+        </div>
+        <div class="col-sm-12 col-md-4 ">
+            <div class="backContainer">
+                <a class="linkBackGenerated" href="{% url 'home'  %}">powrót do strony głównej</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid-container-generated">
+    <div class="pictureGeneratedContainer">
+      <div class="pictureGenerated">
+          <div class="picContainer" style="background-image: url('{% static 'images/generated.png'  %}');">
+
+          </div>
+      </div>
+    </div>
+    <div class="textGeneratedContainer">
+      <div class="textGenerated">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12">
+                    <div class="titleGenerated">
+                        Nasze <span class="colorGeneratedtitle">założenia.</span>
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12">
+                      <div class="textContent">
+                        Minimalna wielkość instalacji <span class="generatedText">{{ data.kwp  }} kWp</span>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                    <div class="textContent">
+                        Powierzchnia potrzebna do montażu paneli fotowoltaicznych: <span class="generatedText">{{ data.paneleM2  }} m2</span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="textContent">
+                        Ilość paneli fotowoltaicznych:<span class="generatedText">{{ data.sztukiPaneli  }} sztuk</span>
+                    </div>
+                </div>
+            </div>
+   
+
+          </div>
+      </div>
+    </div>
+  </div>
 
 {% endblock %}
