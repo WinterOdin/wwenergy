@@ -33,13 +33,13 @@ def generated_data(request):
       price = request.POST.get('powerPrice')
       data  = electricData.objects.get(id=price)
       form  = clientForm(request.POST)
-     # if form.is_valid():
-       # phone = form.cleaned_data['phone']
-        #email = form.cleaned_data['email']
-        #if not phone and not email:
-        #  pass
-        #else:
-         #   form.save()
+      if form.is_valid():
+        phone = form.cleaned_data['phone']
+        email = form.cleaned_data['email']
+        if not phone and not email:
+          pass
+        else:
+         form.save()
 
     context={
       'data':data
