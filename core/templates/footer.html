@@ -39,7 +39,7 @@
     </div>
     <div class="terms">
       <div class="wrapperTermsFooter">
-        <!--<a href="#" class="termsLinkFooter">warunki i zasady</a>-->
+
       </div>
     </div>
     <div class="phone">
@@ -48,16 +48,15 @@
           <div class="callFooter">Kontakt</div>
         </div>
         <div class="phonesFooter">
-          <div class="countryFooter">PL </div><div class="numberFooter"> +48 43 550 1723</div>
+          <div class="countryFooter">PL </div><div class="numberFooter"> +48 {{ data.phone  }}</div>
         </div>
         <div class="phonesFooter">
-          <div class="countryFooter">Email </div><div class="numberFooter"> <a class="numberFooter" href="mailto:biuro@wwenergia.pl">biuro@wwenergia.pl</a></div>
+          <div class="countryFooter">Email </div><div class="numberFooter"> <a class="numberFooter" href="mailto:biuro@wwenergia.pl">{{ data.email  }}</a></div>
         </div>
       </div>
     </div>
     <div class="faq">
       <div class="faqTermsFooter">
-       <!--- <a href="#" class="faqLinkFooter">Często zadawane pytania</a>-->
       </div>
     </div>
     <div class="office"><!--Same classes as time-->
@@ -68,13 +67,13 @@
           Nasza lokalizacja
           </div>
           <div class="hoursFooter">
-            Wilcza 31/1A Warszawa
+            {{ data.location  }}
           </div>
           <div class="dayDateFooter">
             Numer identyfikacji (NIP)
           </div>
           <div class="hoursFooter">
-              7010700725
+              {{ data.nip  }}
           </div>
           <div class="dayDateFooter">
 

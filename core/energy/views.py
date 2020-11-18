@@ -4,19 +4,13 @@ from django.http import HttpResponse
 from django.templatetags.static import static
 from .models import *
 from .forms import *
-import re
-#we are validating email in this way cuz U've read that django email validator can be bit fussy
-regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
 
-def check(email):  
-    if(re.search(regex,email)):  
-        return 1 
-    else:  
-        return 0
+
 
 
 
 def home(request):
+    data = info.objects.last()
     latest_pics = galleryModel.objects.all()[:6]
     form        = clientForm()
     selectPrice = electricityPrice.objects.all()
@@ -24,6 +18,7 @@ def home(request):
       'latest_pics':latest_pics,
       'form'       :form,
       'selectPrice':selectPrice,
+      'data':data
     }
     return render(request,'index.html', context)
 
@@ -45,3 +40,4 @@ def generated_data(request):
       'data':data
     }
     return render(request,'generated.html', context)
+

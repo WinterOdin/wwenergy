@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-sm-12 col-md-4">
             <div class="imgGeneratedWrapper">
-                <a class="logo" href="/"><img src="{% static '/images/Black-on-Transparent.png'  %}" class="logoImg logoImgGenerated" alt="logo"></a>
+                <a class="logo" href="/"><img src="{% static '/images/Black-on-Transparent.png'  %}" alt="logo" class="logoImg logoImgGenerated" ></a>
             </div>
         </div>
         <div class="col-sm-12 col-md-4">
@@ -40,14 +40,14 @@
               <div class="row">
                   <div class="col-12">
                       <div class="textContent">
-                        Minimalna wielkość instalacji <span class="generatedText">{{ data.kwp  }} kWp</span>
+                        Minimalna wielkość instalacji: <span class="generatedText">{{ data.kwp  }} kWp.</span>
                       </div>
                   </div>
               </div>
               <div class="row">
                 <div class="col-12">
                     <div class="textContent">
-                        Powierzchnia potrzebna do montażu paneli fotowoltaicznych: <span class="generatedText">{{ data.panele_m2  }} m2</span>
+                        Powierzchnia potrzebna do montażu paneli fotowoltaicznych: <span class="generatedText">{{ data.panele_m2  }} m2.</span>
                     </div>
                     
                 </div>
@@ -55,12 +55,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="textContent">
-                        Ilość paneli fotowoltaicznych:<span class="generatedText">{{ data.sztuki_paneli  }} sztuk</span>
+                        Ilość paneli fotowoltaicznych: <span class="generatedText">{{ data.sztuki_paneli  }} sztuk.</span>
                     </div>
                 </div>
             </div>
-   
-
           </div>
       </div>
     </div>

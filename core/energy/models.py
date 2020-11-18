@@ -37,3 +37,13 @@ class client(models.Model):
     
     def __str__(self):
         return str(self.name )+ " " + str(self.surname) 
+
+class info(models.Model):
+    location    = models.CharField(max_length=30,null=True, blank=True, )
+    email       = models.CharField(max_length=30,null=True, blank=True, )
+    phone       = models.CharField(max_length=9,null=True, blank=True)
+    nip         = models.CharField(max_length=30,null=True, blank=True)
+  
+    
+    def __str__(self):
+        return str(self.location )+ " " + str(self.nip) 

@@ -11,7 +11,7 @@
             By obliczyć potrzebne metry kwadratowe na instalacjie paneli oraz ich ilość wybierz jeden z przedziałów który to reprezentuje twoje<span class="textIndexDot">średnie roczne</span> opłaty za prąd.
         </div>
         <form method="POST" action="{% url 'data'  %}">
-            {% csrf_token  %}
+            {% csrf_token %}
             <div class="calcSelect">
                 <select name="powerPrice" id="powerPrice" class="selectControl" required >
                     <option value="">wybierz średnią roczną</option>

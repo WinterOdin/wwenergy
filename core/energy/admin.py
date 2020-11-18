@@ -28,6 +28,6 @@ admin.site.register(galleryModel)
 admin.site.register(electricityPrice)
 admin.site.register(electricData,electricDataAdmin)
 admin.site.register(client, clientsDataAdmin)
-
+admin.site.register(info)
 
 
