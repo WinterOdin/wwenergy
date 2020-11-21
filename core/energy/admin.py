@@ -13,8 +13,8 @@ class electricDataAdmin(admin.ModelAdmin):
 
 
 class clientsDataAdmin(admin.ModelAdmin):
-    list_display  = ('name','surname','email','phone')
-    search_fields = ('name','surname','email','phone')
+    list_display  = ('name','surname','email','phone','price')
+    search_fields = ('name','surname','email','phone','price')
 
 
 

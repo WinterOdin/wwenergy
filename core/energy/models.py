@@ -33,6 +33,7 @@ class client(models.Model):
     surname     = models.CharField(max_length=20,null=True, blank=True, )
     phone       = models.CharField(max_length=9,null=True, blank=True)
     email       = models.CharField(max_length=33,null=True, blank=True)
+    price       = models.CharField(max_length=14,null=True, blank=True)
   
     
     def __str__(self):

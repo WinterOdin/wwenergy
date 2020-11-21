@@ -19,6 +19,20 @@
         </div>
     </div>
 </div>
+{% if name  %}
+<div class="container">
+    <div class="row">
+        <div class="col-12  d-flex justify-content-center" >
+          <div class="titleGenerated">
+              Dziękujemy <span class="colorGeneratedtitle">{{ name }}</span>
+              <div class="generatedReportName">
+                  Otrzymaliśmy twoje zgłoszenie, skontaktujemy się z tobą wkrótce
+              </div>
+          </div>
+        </div>
+      </div>
+</div>
+{% endif  %}
 <div class="grid-container-generated">
     <div class="pictureGeneratedContainer">
       <div class="pictureGenerated">
