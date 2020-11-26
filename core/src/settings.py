@@ -7,11 +7,11 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-
+SECRET_KEY = '#zk0-e$_i4h8c7tp-g=$#fs#@$2%ka+zub7o(_+!i@j0b#q9!w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['wwenergy.pythonanywhere.com']
+ALLOWED_HOSTS = ['wwenergy.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition

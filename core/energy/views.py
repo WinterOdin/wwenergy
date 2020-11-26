@@ -25,6 +25,8 @@ def generated_data(request):
     if request.method == "POST":
       price = request.POST.get('powerPrice')
       data  = electricData.objects.get(id=price)
+      print(price)
+      print(data)
       dataPrice = electricityPrice.objects.get(id=price)
       phone = request.POST.get('phone')
       email = request.POST.get('email')

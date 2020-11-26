@@ -1,4 +1,11 @@
-# website-for-photovoltaics-company
-Django ChartJS Jquery Bootstrap and grid 
+# Website for [wwenergia.pl](wwenergia.pl)
 
-![screen](https://raw.githubusercontent.com/WinterOdin/website-for-photovoltaics-company/master/119883441_373423507155909_3243393501218254535_n.jpg)
+
+## If you wanna install this project
+```powershell
+virtualenv env
+env\Scripts\activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+```
